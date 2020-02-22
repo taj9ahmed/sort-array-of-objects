@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <link rel="stylesheet" href="style.css">
+  
+  </head>
+
+  <body>
+    <h1>Sort an array of objects by value of a member</h1>
+    
+    <script type="text/javascript" charset="utf-8">
+      
+      var library = [ 
+                     { author: 'Bill Gates', title: 'The Road Ahead', libraryID: 1254},
+                     { author: 'Steve Jobs', title: 'Walter Isaacson', libraryID: 4264},
+                     { author: 'Suzanne Collins', title: 'Mockingjay: The Final Book of The Hunger Games', libraryID: 3245}
+                    ];
+                    
+      function sort_arr_objs ( arr ) {
+        
+        arr.sort( ( el1 , el2 ) => el1.title > el2.title ? 1 : -1 );
+        return arr;
+        
+
+        
+      }
+      
+      console.log( sort_arr_objs( library ) ) ;
+    </script>
+  </body>
+
+</html>
